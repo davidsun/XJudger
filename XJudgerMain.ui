@@ -1,0 +1,155 @@
+<ui version="4.0" >
+ <class>XJudgerMain</class>
+ <widget class="QMainWindow" name="XJudgerMain" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>801</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="sizePolicy" >
+   <sizepolicy vsizetype="Fixed" hsizetype="Fixed" >
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle" >
+   <string>MainWindow</string>
+  </property>
+  <property name="windowIcon" >
+   <iconset resource="artwork/artwork.qrc" >
+    <normaloff>:/Icons/cena.icb</normaloff>
+    <normalon>:/Icons/cena.icb</normalon>
+    <disabledoff>:/Icons/cena.icb</disabledoff>
+    <disabledon>:/Icons/cena.icb</disabledon>
+    <activeoff>:/Icons/cena.icb</activeoff>
+    <activeon>:/Icons/cena.icb</activeon>
+    <selectedoff>:/Icons/cena.icb</selectedoff>
+    <selectedon>:/Icons/cena.icb</selectedon>:/Icons/cena.icb</iconset>
+  </property>
+  <property name="animated" >
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget" >
+   <layout class="QGridLayout" name="gridLayout" >
+    <item row="0" column="0" >
+     <widget class="QGroupBox" name="groupBox" >
+      <property name="title" >
+       <string>aaa</string>
+      </property>
+      <property name="flat" >
+       <bool>false</bool>
+      </property>
+      <layout class="QFormLayout" name="formLayout" >
+       <item row="0" column="0" >
+        <widget class="QTabWidget" name="tabWidget" >
+         <property name="currentIndex" >
+          <number>0</number>
+         </property>
+         <widget class="QWidget" name="tab" >
+          <attribute name="title" >
+           <string>Tab 1</string>
+          </attribute>
+          <layout class="QGridLayout" name="gridLayout_2" >
+           <item row="0" column="3" >
+            <widget class="QLabel" name="label" >
+             <property name="text" >
+              <string>TextLabel</string>
+             </property>
+            </widget>
+           </item>
+           <item rowspan="3" row="1" column="0" colspan="4" >
+            <widget class="QTreeView" name="treeView" />
+           </item>
+           <item row="2" column="2" colspan="2" >
+            <widget class="QPlainTextEdit" name="plainTextEdit" >
+             <property name="font" >
+              <font>
+               <pointsize>9</pointsize>
+               <weight>75</weight>
+               <italic>true</italic>
+               <bold>true</bold>
+               <underline>true</underline>
+               <strikeout>false</strikeout>
+              </font>
+             </property>
+             <property name="plainText" >
+              <string>aaa</string>
+             </property>
+             <property name="textInteractionFlags" >
+              <set>Qt::TextSelectableByMouse</set>
+             </property>
+            </widget>
+           </item>
+           <item rowspan="2" row="3" column="1" colspan="3" >
+            <widget class="QTextEdit" name="textEdit" />
+           </item>
+           <item rowspan="2" row="4" column="3" >
+            <widget class="QProgressBar" name="progressBar" >
+             <property name="value" >
+              <number>24</number>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="tab_2" >
+          <attribute name="title" >
+           <string>Tab 2</string>
+          </attribute>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar" >
+   <property name="geometry" >
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>801</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="MainMenuFile" >
+    <property name="title" >
+     <string>文件</string>
+    </property>
+    <addaction name="MainActionExit" />
+   </widget>
+   <addaction name="MainMenuFile" />
+  </widget>
+  <widget class="QStatusBar" name="statusbar" />
+  <action name="MainActionExit" >
+   <property name="text" >
+    <string>退出</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="artwork/artwork.qrc" />
+ </resources>
+ <connections>
+  <connection>
+   <sender>MainActionExit</sender>
+   <signal>triggered()</signal>
+   <receiver>XJudgerMain</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>399</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
