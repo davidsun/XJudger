@@ -1,0 +1,13 @@
+<RCC>
+  <qresource prefix="Icons" >
+    <file>XJudgerMain.png</file>
+    <file>XJudgerTest.png</file>
+    <file>XJudgerView.png</file>
+    <file>User.png</file>
+    <file>TestCase.png</file>
+    <file>TestCaseExpand.png</file>
+  </qresource>
+  <qresource prefix="Jpegs" >
+    <file>Splash.xcf</file>
+  </qresource>
+</RCC>
